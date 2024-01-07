@@ -1,2 +1,8 @@
-<input type="file" (change)="onFileSelected($event)" accept="{{acceptedFileTypes}}">
-<button type="button" (click)="onSubmit()">Dosyayı Kaydet</button>
+<!--<input type="file" (change)="onFileSelected($event)" accept="{{acceptedFileTypes}}">
+<button type="button" (click)="onSubmit()">Dosyayı Kaydet</button> -->
+
+
+<div>
+  <input class="form-control form-control-lg" (change)="onFileSelected($event)" accept="{{acceptedFileTypes}}" type="file">
+  <button class="btn btn-success" type="button" (click)="onSubmit()">Dosyayı Kaydet</button>
+</div>
